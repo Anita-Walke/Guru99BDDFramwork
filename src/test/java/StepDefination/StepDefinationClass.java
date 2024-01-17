@@ -1,7 +1,8 @@
 package StepDefination;
 
 import BaseLayer.BaseClass;
-import BaseLayer.BaseClass;
+import PageLayer.LoginPage;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
@@ -13,8 +14,10 @@ public class StepDefinationClass extends BaseClass{
 	}
 	@When("user enter valid firstname,lastname")
 	public void user_enter_valid_firstname_lastname() {
-	    System.out.println("hi");
+	   LoginPage login=new LoginPage();
+	   login.EneterFname("Tajuddin");
+	    
 	}
-
+	
 
 }
